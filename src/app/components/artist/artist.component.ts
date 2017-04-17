@@ -22,6 +22,10 @@ export class ArtistComponent implements OnInit {
         this.SS.getArtist(id).subscribe(artist =>  {
           this.artist = artist;
         })
+
+        this.SS.getAlbum(id).subscribe(albums =>  {
+          this.albums = albums.items;
+        })
       })
   }
 
